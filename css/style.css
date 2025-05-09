@@ -70,6 +70,14 @@ input:focus {
 
   font-family: var(--font-text);
 }
+.textAreaDois {
+  height: 7.5rem;
+  width: 100%;
+  border: 1px solid var(--color-off-text-response);
+  border-radius: 8px;
+padding: 5px;
+  font-family: var(--font-text);
+}
 .textArea :hover {
   border: 1px solid var(--color-options);
   border-radius: 8px;

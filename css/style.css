@@ -1,7 +1,7 @@
 @import url(global.css);
 @import url(styleVersaoDois.css);
 @import url(options.css);
-
+@import url(acordo.css);
 .container {
   font-family: var(--font-text);
 }
@@ -38,6 +38,13 @@ input {
   border-radius: 6px;
   padding: 5px;
 }
+input:focus {
+  outline: 1px solid var(--color-options);
+  -webkit-box-shadow: 0px 2px 15px 9px #fee7d6;
+  box-shadow: 0px 2px 15px 9px #fee7d6;
+  outline-style: 0.1px;
+}
+
 .selectGenero {
   height: 2.5rem;
   width: 100%;
@@ -46,13 +53,35 @@ input {
   padding: 5px;
   font-family: var(--font-text);
 }
+.selectGenero:hover {
+  cursor: pointer;
+}
+.selectGenero:focus {
+  outline: 1px solid var(--color-options);
+  -webkit-box-shadow: 0px 2px 15px 9px #fee7d6;
+  box-shadow: 0px 2px 15px 9px #fee7d6;
+  outline-style: 0.1px;
+}
 .textArea {
   height: 7.5rem;
   width: 100%;
   border: 1px solid var(--color-off-text-response);
-  border-radius: 6px;
-  padding: 10px;
+  border-radius: 8px;
+
   font-family: var(--font-text);
+}
+.textArea :hover {
+  border: 1px solid var(--color-options);
+  border-radius: 8px;
+  color: var(--color-options);
+  & .imgNuvem {
+    background-image: url(/css/icons/cloudYes.png);
+  }
+}
+.imgNuvem {
+  background-image: url(/css/icons/cloud-uploadTinhaErrado.png);
+  width: 2.9rem;
+  height: 2.5rem;
 }
 .fileArea {
   height: 7.5rem;
@@ -88,6 +117,5 @@ input {
 }
 .oFormularioParteDois {
   padding-top: 48px;
+  height: 70rem;
 }
-
-

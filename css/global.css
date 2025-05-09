@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --border-color-leve: ##f67841;
+  --border-color-leve: #f67841;
   --color-options: #f3541c;
   --color-wrong: #e43a12;
   --title-text: #292524;
@@ -26,5 +26,5 @@
 body {
   font-family: var(--font-text);
   background-color: var(--face-of-container-primary);
-  color: var(--color-off-text-response);
+  color: var(--color-off-labels-and-information);
 }

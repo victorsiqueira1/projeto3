@@ -22,7 +22,35 @@
 .caixa:has(:checked) {
   border: 2px solid var(--color-highlight);
 
-  & .circuloCinza{
+  & .circuloCinza {
+    background-image: url(/css/icons/checkmarkTres.png);
+  }
+}
+.caixaMenor {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: url(/css/icons/circle.png);
+  height: 6rem;
+  padding: 5px;
+  border: 1px solid var(--color-off-text-response);
+  border-radius: 10px;
+}
+.caixaMenor:hover {
+  border: 1px solid var(--color-options);
+
+  .circuloCinza {
+    background-image: url(/css/icons/circleDois.png);
+  }
+}
+.caixaMenor:has(:checked) {
+  border: 2px solid var(--color-highlight);
+
+  & .circuloCinza {
     background-image: url(/css/icons/checkmarkTres.png);
   }
 }
@@ -47,9 +75,30 @@
 }
 .circuloCinza {
   position: absolute;
-  left: 0.5rem;
-  top: 0.5rem;
+  left: 0.2rem;
+  top: 0.2rem;
   width: 1.5rem;
   height: 1.5rem;
   background-image: url(/css/icons/circle.png);
+}
+.qualEsporte {
+  width: 100%;
+  height: 10rem;
+
+  margin-top: 20px;
+}
+.caixaDeCaixinhas {
+  display: grid;
+  width: 100%;
+  height: 8rem;
+  margin-top: 15px;
+
+  grid-template-columns: repeat(7, 5rem);
+  gap: 10px;
+}
+.caixaDeCaixinhas div:nth-child(5) {
+  grid-row: 2/3;
+}
+.caixaDeCaixinhas div:nth-child(6) {
+  grid-row: 2/3;
 }

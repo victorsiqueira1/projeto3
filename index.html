@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="formInteira" action="">
+        <div class="opcaoVolta">
+          <img src="css/icons/arrow-left-02.png" alt="icon" />
+          <p style="font-size: 13px; padding-left: 5px; padding-top: 1px">
+            Voltar
+          </p>
+        </div>
+        <div class="explicassao">
+          <h3 style="color: var(--title-text)">Formulário de matrícula</h3>
+          <p style="font-size: 13px">
+            Preencha os dados abaixo para matricular seu filho na escola de
+            educação infantil Estrelas do Amanhã.
+          </p>
+        </div>
+        <div class="oFormularioParteUm">
+          <h5 style="color: var(--title-text)">Informações da criança</h5>
+          <div class="inputs">
+            <p style="font-size: 11px; padding-bottom: 2px">Nome completo</p>
+            <input type="text" name="Nome" placeholder="Nome" />
+          </div>
+          <div class="inputs">
+            <p style="font-size: 11px; padding-bottom: 2px">
+              Data de nascimento
+            </p>
+            <input type="date" name="Nome" />
+          </div>
+          <div class="select">
+            <p style="font-size: 11px; padding-bottom: 2px">Sexo</p>
+            <select class="selectGenero" name="sexo">
+              <optgroup label="Gênero">
+                <option label="Masculino" value="Masculino"></option>
+                <option label="Feminino" value="Feminino"></option>
+                <option
+                  label="Prefiro não dizer"
+                  value="Prefiro não dizer"
+                ></option>
+              </optgroup>
+            </select>
+          </div>
+          <div style="padding-top: 20px">
+            <p style="font-size: 11px; padding-bottom: 2px">
+              Informações Médicas
+            </p>
+            <textarea
+              class="textArea"
+              name="Alergias"
+              placeholder="Alergias"
+              id=""
+            ></textarea>
+          </div>
+          <div style="padding-top: 20px">
+            <p style="font-size: 11px; padding-bottom: 2px">
+              Certidao de nacimento
+            </p>
+            <div class="textArea">
+              <div class="recado">
+                <input class="escondido" type="file" name="Document" />
+
+                <img src="/css/icons/cloud-upload.png" alt="" />
+                <p style="font-size: 13px">
+                  Clique aqui para selecionar arquivos
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="oFormularioParteDois">
+          <h3 style="color: var(--title-text)">Endereço residencial</h3>
+          <div style="margin-top: 20px">
+            <p style="font-size: 13px; padding-bottom: 2px">CEP</p>
+            <input
+              type="text"
+              id="cep"
+              name="cep"
+              placeholder="00000-000"
+              maxlength="9"
+            />
+            <div class="preecherEndereço">
+              <div >
+                <p style="font-size: 12px">Rua</p>
+                <input style="width: 100%" type="text" />
+              </div>
+              <div >
+                <p style="font-size: 12px">Cidade</p>
+                <input style="width: 100%" type="text" />
+              </div>
+              <div >
+                <p style="font-size: 12px">Número</p>
+                <input style="width: 100%" type="text" />
+              </div>
+              <div >
+                <p style="font-size: 12px">Estado</p>
+                <input style="width: 100%" type="text" />
+              </div>
+            </div>
+            <div class="infoResponsaveis">
+              <h5 style="color: var(--title-text)">
+                Informações do responsável
+              </h5>
+              <div class="completarInfo">
+                <div style="margin-top: 20px">
+                  <p style="font-size: 12px">Nome do responsável</p>
+                  <input style="width: 100%" type="text" />
+                  <p style="font-size: 12px">
+                    Principal responsável legal e contato de emergência
+                  </p>
+                </div>
+                <div style="margin-top: 20px">
+                  <p style="font-size: 12px">Telefone</p>
+                  <input style="width: 100%" type="tel" />
+                </div>
+                <div style="margin-top: 20px">
+                  <p style="font-size: 12px">E-mail</p>
+                  <input style="width: 100%" type="email" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="parteDeCima">
+            <h5 style="color: var(--title-text); padding-bottom: 15px">
+              Opções de matrícula
+            </h5>
+            <p style="font-size: 11px; padding-bottom: 10px">
+              Selecione o turno de estudo
+            </p>
+          </div>
+          <div class="opcoesMatriculo">
+            <div class="caixa">
+              <input class="check" type="radio" />
+              <div class="circuloCinza" alt=""></div>
+              <img src="/css/icons/sun-cloud-02.png" alt="" />
+              <label style="font-size: 13px">Manhã</label>
+            </div>
+            <div class="caixa">
+              <input class="check" type="radio" />
+              <div class="circuloCinza" alt=""></div>
+              <img src="/css/icons/sun-02.png" alt="" />
+              <p style="font-size: 13px">Tarde</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

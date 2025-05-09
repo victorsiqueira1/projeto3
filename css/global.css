@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --border-color-leve: ##f67841;
+  --color-options: #f3541c;
+  --color-wrong: #e43a12;
+  --title-text: #292524;
+  --color-off-labels-and-information: #57534e;
+  --color-off-text-response: #8f8881;
+  --color-highlight: #e43a12;
+  --face-of-container-primary: #ffffff;
+  --face-of-container-secundary: ##fee7d6;
+  --color-of-div-disabled: ##e7e5e4;
+  --text-color: #d6d3d1;
+  --suport-one: #f9a474;
+  --suport-two: #fedf6f;
+  --suport-tree: #c7d78d;
+  --suport-four: #b8cedc;
+  --suport-five: #c3b2e7;
+  --suport-six: #f682a5;
+  --font-text: "Poppins", sans-serif;
+}
+body {
+  font-family: var(--font-text);
+  background-color: var(--face-of-container-primary);
+  color: var(--color-off-text-response);
+}

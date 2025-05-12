@@ -12,7 +12,7 @@
   --color-off-text-response: #8f8881;
   --color-highlight: #e43a12;
   --face-of-container-primary: #ffffff;
-  --face-of-container-secundary: ##fee7d6;
+  --face-of-container-secundary: #fee7d6;
   --color-of-div-disabled: ##e7e5e4;
   --text-color: #d6d3d1;
   --suport-one: #f9a474;
@@ -23,8 +23,12 @@
   --suport-six: #f682a5;
   --font-text: "Poppins", sans-serif;
 }
+.container{
+  display: flex;
+}
 body {
   font-family: var(--font-text);
   background-color: var(--face-of-container-primary);
   color: var(--color-off-labels-and-information);
+
 }

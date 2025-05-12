@@ -1,7 +1,9 @@
 @import url(global.css);
-@import url(styleVersaoDois.css);
-@import url(options.css);
-@import url(acordo.css);
+@import url(formUm/styleVersaoDois.css);
+@import url(formUm/options.css);
+@import url(formUm/acordo.css);
+@import url(formDois/quadrado.css);
+@import url(formUm/acordoCopy.css);
 .container {
   font-family: var(--font-text);
 }
@@ -11,7 +13,6 @@
 }
 .formInteira {
   width: 50%;
-  height: 100vh;
 
   padding-left: 25px;
   padding-right: 25px;
@@ -75,7 +76,7 @@ input:focus {
   width: 100%;
   border: 1px solid var(--color-off-text-response);
   border-radius: 8px;
-padding: 5px;
+  padding: 5px;
   font-family: var(--font-text);
 }
 .textArea :hover {
@@ -85,6 +86,10 @@ padding: 5px;
   & .imgNuvem {
     background-image: url(/css/icons/cloudYes.png);
   }
+}
+
+.oFormularioParteDois{
+  height: 70rem;
 }
 .imgNuvem {
   background-image: url(/css/icons/cloud-uploadTinhaErrado.png);
@@ -123,7 +128,10 @@ padding: 5px;
   height: 100%;
   cursor: pointer;
 }
-.oFormularioParteDois {
-  padding-top: 48px;
-  height: 70rem;
+.formDois {
+  width: 50%;
+background-color:var(--face-of-container-secundary);
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 25px;
 }

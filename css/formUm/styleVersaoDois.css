@@ -1,0 +1,23 @@
+.preecherEndereço {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  height: 10rem;
+  flex-wrap: wrap;
+  gap: 38px;
+}
+.infoResponsaveis {
+  height: 17rem;
+  width: 100%;
+  margin-top: 30px;
+}
+.completarInfo {
+  height: 100%;
+  width: 100%;
+}
+.retanguloMaior {
+  width: 55%;
+}
+.retanguloMenor {
+  width: 35%;
+}

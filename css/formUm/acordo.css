@@ -1,0 +1,66 @@
+.importDoQuadrado {
+  position: absolute;
+  height: 4rem;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.lerAcordo {
+  height: 4rem;
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+.lerAcordo:hover {
+  .imgQuadrada {
+    background-image: url(/css/icons/square.png);
+  }
+}
+.lerAcordo:has(:checked) {
+  .imgQuadrada {
+    background-image: url(/css/icons/check2.png);
+  }
+}
+
+.imgQuadrada {
+  width: 2.5rem;
+  height: 1.4rem;
+  background-image: url(icons/opcaoQuadrada.png);
+}
+
+.botoesSalva {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+}
+.botoes {
+  width: 10rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-options);
+  background-color: #ffffff;
+  border-radius: 5px;
+  color: var(--color-options);
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.botoes:hover {
+  -webkit-box-shadow: 0px 2px 15px 9px rgba(243, 84, 28, 0.39);
+  box-shadow: 0px 2px 15px 9px rgba(243, 84, 28, 0.39);
+}
+
+.botoesDois {
+  width: 10rem;
+  height: 2.5rem;
+  color: #ffffff;
+  background-color: var(--color-options);
+  border: 1px solid var(--color-options);
+  border-radius: 5px;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.botoesDois:hover {
+  background-color: var(--border-color-leve);
+}
